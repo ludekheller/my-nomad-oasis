@@ -32,6 +32,8 @@ repository = "https://github.com/ludekheller/my-nomad-oasis"
 plugins = [
   "nomad-north-jupyter>=0.2.6",
   "nomad-gui==2.0.0",
+  "nomad-dsc-trios @ git+https://github.com/ludekheller/nomad_plugins.git@dsc-trios-v0.1.0#subdirectory=nomad-dsc-trios",
+
 ]
 jupyter = ["jupyter-events"]
 gpu-action = []
