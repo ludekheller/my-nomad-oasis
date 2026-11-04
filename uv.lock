@@ -1998,8 +1998,8 @@ name = "httpcore2"
 version = "2.13.1"
 source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
 dependencies = [
-    { name = "h11", marker = "python_full_version < '3.12' or sys_platform != 'emscripten'" },
-    { name = "truststore", marker = "python_full_version < '3.12' or sys_platform != 'emscripten'" },
+    { name = "h11", marker = "sys_platform != 'emscripten'" },
+    { name = "truststore", marker = "sys_platform != 'emscripten'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/cb/f3/1db7aa2bc2524062192bb0e0323969492d1883152a232fe36eea65f4e35c/httpcore2-2.13.1.tar.gz", hash = "sha256:e0aa977abe17e69a3b820a24542a6fa88702676d83880b8d194dcd18408e5103", size = 68071, upload-time = "2026-09-23T07:47:22.372Z" }
 wheels = [
@@ -3680,6 +3680,7 @@ jupyter = [
     { name = "jupyter-events" },
 ]
 plugins = [
+    { name = "nomad-dsc-trios" },
     { name = "nomad-gui" },
     { name = "nomad-north-jupyter" },
 ]
@@ -3687,12 +3688,22 @@ plugins = [
 [package.metadata]
 requires-dist = [
     { name = "jupyter-events", marker = "extra == 'jupyter'" },
+    { name = "nomad-dsc-trios", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=dsc-trios-v0.1.0" },
     { name = "nomad-gui", marker = "extra == 'plugins'", specifier = "==2.0.0" },
     { name = "nomad-lab", extras = ["dev", "infrastructure"], marker = "extra == 'dev'", specifier = "==2.0.0" },
     { name = "nomad-lab", extras = ["infrastructure"], specifier = "==2.0.0" },
     { name = "nomad-north-jupyter", marker = "extra == 'plugins'", specifier = ">=0.2.6" },
 ]
 provides-extras = ["plugins", "jupyter", "gpu-action", "cpu-action", "dev"]
+
+[[package]]
+name = "nomad-dsc-trios"
+version = "0.1.0"
+source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=dsc-trios-v0.1.0#b5fb41dec24171d9d9a8396b0a705bdb69d2b7cb" }
+dependencies = [
+    { name = "nomad-lab" },
+    { name = "tzdata" },
+]
 
 [[package]]
 name = "nomad-gui"
