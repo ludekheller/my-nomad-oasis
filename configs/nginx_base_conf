@@ -380,3 +380,10 @@ location /backend/north/ {
 
     proxy_buffering off;
 }
+
+# Custom homepage logo (FZU, Dept. 18)
+location ~ /assets/nomad_logo_full_(light|dark)-[^/]*\.svg$ {
+    root /etc/nginx/custom;
+    try_files /nomad_logo_full_$1.svg =404;
+    add_header Cache-Control "no-cache";
+}
