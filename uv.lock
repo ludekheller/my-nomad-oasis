@@ -3689,7 +3689,7 @@ plugins = [
 [package.metadata]
 requires-dist = [
     { name = "jupyter-events", marker = "extra == 'jupyter'" },
-    { name = "nomad-dsc-trios", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=152789d689ff3c0bb519a7aa877102738cdb1943" },
+    { name = "nomad-dsc-trios", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=9beabb9c485ee493e0d43a8637ce9ec625f3fd13" },
     { name = "nomad-gui", marker = "extra == 'plugins'", specifier = "==2.0.0" },
     { name = "nomad-lab", extras = ["dev", "infrastructure"], marker = "extra == 'dev'", specifier = "==2.0.0" },
     { name = "nomad-lab", extras = ["infrastructure"], specifier = "==2.0.0" },
@@ -3700,8 +3700,8 @@ provides-extras = ["plugins", "jupyter", "gpu-action", "cpu-action", "dev"]
 
 [[package]]
 name = "nomad-dsc-trios"
-version = "0.1.1"
-source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=152789d689ff3c0bb519a7aa877102738cdb1943#152789d689ff3c0bb519a7aa877102738cdb1943" }
+version = "0.2.0"
+source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=9beabb9c485ee493e0d43a8637ce9ec625f3fd13#9beabb9c485ee493e0d43a8637ce9ec625f3fd13" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "tzdata" },
