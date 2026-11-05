@@ -32,7 +32,7 @@ repository = "https://github.com/ludekheller/my-nomad-oasis"
 plugins = [
   "nomad-north-jupyter>=0.2.6",
   "nomad-gui==2.0.0",
-  "nomad-dsc-trios @ git+https://github.com/ludekheller/nomad_plugins.git@152789d689ff3c0bb519a7aa877102738cdb1943#subdirectory=nomad-dsc-trios",
+  "nomad-dsc-trios @ git+https://github.com/ludekheller/nomad_plugins.git@9beabb9c485ee493e0d43a8637ce9ec625f3fd13#subdirectory=nomad-dsc-trios",
   "nomad-thermomech @ git+https://github.com/ludekheller/nomad_plugins.git@5615a3fea9ca2b0d779b0f120792e2bd35462fc3#subdirectory=nomad-thermomech",
 ]
 jupyter = ["jupyter-events"]
