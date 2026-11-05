@@ -3689,19 +3689,19 @@ plugins = [
 [package.metadata]
 requires-dist = [
     { name = "jupyter-events", marker = "extra == 'jupyter'" },
-    { name = "nomad-dsc-trios", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=e87ea73bc74d6b434f8b327f2b87a795383a716b" },
+    { name = "nomad-dsc-trios", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=08aa930a260907592a35d62deed89e5878ae67a0" },
     { name = "nomad-gui", marker = "extra == 'plugins'", specifier = "==2.0.0" },
     { name = "nomad-lab", extras = ["dev", "infrastructure"], marker = "extra == 'dev'", specifier = "==2.0.0" },
     { name = "nomad-lab", extras = ["infrastructure"], specifier = "==2.0.0" },
     { name = "nomad-north-jupyter", marker = "extra == 'plugins'", specifier = ">=0.2.6" },
-    { name = "nomad-thermomech", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-thermomech&rev=e87ea73bc74d6b434f8b327f2b87a795383a716b" },
+    { name = "nomad-thermomech", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-thermomech&rev=08aa930a260907592a35d62deed89e5878ae67a0" },
 ]
 provides-extras = ["plugins", "jupyter", "gpu-action", "cpu-action", "dev"]
 
 [[package]]
 name = "nomad-dsc-trios"
-version = "0.4.0"
-source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=e87ea73bc74d6b434f8b327f2b87a795383a716b#e87ea73bc74d6b434f8b327f2b87a795383a716b" }
+version = "0.4.1"
+source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=08aa930a260907592a35d62deed89e5878ae67a0#08aa930a260907592a35d62deed89e5878ae67a0" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "tzdata" },
@@ -3846,8 +3846,8 @@ wheels = [
 
 [[package]]
 name = "nomad-thermomech"
-version = "0.4.0"
-source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-thermomech&rev=e87ea73bc74d6b434f8b327f2b87a795383a716b#e87ea73bc74d6b434f8b327f2b87a795383a716b" }
+version = "0.4.1"
+source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-thermomech&rev=08aa930a260907592a35d62deed89e5878ae67a0#08aa930a260907592a35d62deed89e5878ae67a0" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "numpy", version = "2.4.6", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version < '3.12'" },
