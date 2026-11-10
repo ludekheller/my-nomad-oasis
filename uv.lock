@@ -3666,6 +3666,16 @@ wheels = [
 ]
 
 [[package]]
+name = "nomad-apt"
+version = "0.3.0"
+source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-apt&rev=d38b9e40edb2f528bd1df6b19f8d6086c481f468#d38b9e40edb2f528bd1df6b19f8d6086c481f468" }
+dependencies = [
+    { name = "nomad-lab" },
+    { name = "numpy", version = "2.4.6", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version < '3.12'" },
+    { name = "numpy", version = "2.5.4", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version >= '3.12'" },
+]
+
+[[package]]
 name = "nomad-distribution"
 source = { editable = "." }
 dependencies = [
@@ -3680,6 +3690,7 @@ jupyter = [
     { name = "jupyter-events" },
 ]
 plugins = [
+    { name = "nomad-apt" },
     { name = "nomad-dsc-trios" },
     { name = "nomad-gui" },
     { name = "nomad-linseis" },
@@ -3691,6 +3702,7 @@ plugins = [
 [package.metadata]
 requires-dist = [
     { name = "jupyter-events", marker = "extra == 'jupyter'" },
+    { name = "nomad-apt", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-apt&rev=d38b9e40edb2f528bd1df6b19f8d6086c481f468" },
     { name = "nomad-dsc-trios", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=8f43b1bd34f33e379a17ce91c31de4da793acecd" },
     { name = "nomad-gui", marker = "extra == 'plugins'", specifier = "==2.0.0" },
     { name = "nomad-lab", extras = ["dev", "infrastructure"], marker = "extra == 'dev'", specifier = "==2.0.0" },
