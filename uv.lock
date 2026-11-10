@@ -3696,7 +3696,7 @@ requires-dist = [
     { name = "nomad-lab", extras = ["infrastructure"], specifier = "==2.0.0" },
     { name = "nomad-north-jupyter", marker = "extra == 'plugins'", specifier = ">=0.2.6" },
     { name = "nomad-thermomech", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-thermomech&rev=0ea4b2b06975f04792f16fdf4e425dcc96476c9a" },
-    { name = "nomad-walterbai", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-walterbai&rev=a1b003080e4c14dbc13e8eee21f24fbcf9d8c8c4" },
+    { name = "nomad-walterbai", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-walterbai&rev=6b8f274ba5717346fc389bfbda633d28129b1b66" },
 ]
 provides-extras = ["plugins", "jupyter", "gpu-action", "cpu-action", "dev"]
 
@@ -3859,8 +3859,8 @@ dependencies = [
 
 [[package]]
 name = "nomad-walterbai"
-version = "0.1.1"
-source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-walterbai&rev=a1b003080e4c14dbc13e8eee21f24fbcf9d8c8c4#a1b003080e4c14dbc13e8eee21f24fbcf9d8c8c4" }
+version = "0.2.0"
+source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-walterbai&rev=6b8f274ba5717346fc389bfbda633d28129b1b66#6b8f274ba5717346fc389bfbda633d28129b1b66" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "numpy", version = "2.4.6", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version < '3.12'" },
