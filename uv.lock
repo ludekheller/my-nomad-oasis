@@ -3693,6 +3693,7 @@ plugins = [
     { name = "nomad-apt" },
     { name = "nomad-dsc-trios" },
     { name = "nomad-gui" },
+    { name = "nomad-infratec" },
     { name = "nomad-linseis" },
     { name = "nomad-north-jupyter" },
     { name = "nomad-thermomech" },
@@ -3705,6 +3706,7 @@ requires-dist = [
     { name = "nomad-apt", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-apt&rev=482fcda3e2c0deed5d50ce1dd634f6ca783b571b" },
     { name = "nomad-dsc-trios", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=8f43b1bd34f33e379a17ce91c31de4da793acecd" },
     { name = "nomad-gui", marker = "extra == 'plugins'", specifier = "==2.0.0" },
+    { name = "nomad-infratec", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-infratec&rev=6f6d164b55b522377209664e3226913b3ca2aff6" },
     { name = "nomad-lab", extras = ["dev", "infrastructure"], marker = "extra == 'dev'", specifier = "==2.0.0" },
     { name = "nomad-lab", extras = ["infrastructure"], specifier = "==2.0.0" },
     { name = "nomad-linseis", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-linseis&rev=54198b1ea5a2694b4f828b7942032fb327e2f4b9" },
@@ -3739,6 +3741,17 @@ dependencies = [
 sdist = { url = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/files/2afa393264183792830fb9c2bd96b0bc9d796e43be6b09d3e571d7e983cd5887/nomad_gui-2.0.0.tar.gz", hash = "sha256:2afa393264183792830fb9c2bd96b0bc9d796e43be6b09d3e571d7e983cd5887" }
 wheels = [
     { url = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/files/85cbc5eb7e0eb0f51d9f2b5874b0157eaa3344dc65c83bc27b2bee861d1a5508/nomad_gui-2.0.0-py3-none-any.whl", hash = "sha256:85cbc5eb7e0eb0f51d9f2b5874b0157eaa3344dc65c83bc27b2bee861d1a5508" },
+]
+
+[[package]]
+name = "nomad-infratec"
+version = "0.1.0"
+source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-infratec&rev=6f6d164b55b522377209664e3226913b3ca2aff6#6f6d164b55b522377209664e3226913b3ca2aff6" }
+dependencies = [
+    { name = "nomad-lab" },
+    { name = "nptdms" },
+    { name = "numpy", version = "2.4.6", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version < '3.12'" },
+    { name = "numpy", version = "2.5.4", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version >= '3.12'" },
 ]
 
 [[package]]
@@ -3890,6 +3903,19 @@ dependencies = [
     { name = "nomad-lab" },
     { name = "numpy", version = "2.4.6", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version < '3.12'" },
     { name = "numpy", version = "2.5.4", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version >= '3.12'" },
+]
+
+[[package]]
+name = "nptdms"
+version = "1.14.0"
+source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
+dependencies = [
+    { name = "numpy", version = "2.4.6", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version < '3.12'" },
+    { name = "numpy", version = "2.5.4", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version >= '3.12'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/56/6d/36a3db9b40b47d7188f57c5f5ef313a08c6008dc3a260da1fe1b9f0360af/nptdms-1.14.0.tar.gz", hash = "sha256:32a24627da13d1c8c323df4fc1e5e001ba56c3da2f358b7b05175e3a6495c32b", size = 193871, upload-time = "2026-11-07T09:14:51.59Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f5/99/483d8f6ea332b6c8980c1eabb66ba40a5e8fcc7b91843ca0694dfc51b275/nptdms-1.14.0-py3-none-any.whl", hash = "sha256:e0f618937ae28d63613f800764667b4af0e4cb0e7f81efd1d54c9d5ddfea843e", size = 182088, upload-time = "2026-11-07T09:14:50.049Z" },
 ]
 
 [[package]]
