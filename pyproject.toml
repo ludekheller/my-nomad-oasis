@@ -34,7 +34,8 @@ plugins = [
   "nomad-gui==2.0.0",
   "nomad-dsc-trios @ git+https://github.com/ludekheller/nomad_plugins.git@8f43b1bd34f33e379a17ce91c31de4da793acecd#subdirectory=nomad-dsc-trios",
   "nomad-thermomech @ git+https://github.com/ludekheller/nomad_plugins.git@0ea4b2b06975f04792f16fdf4e425dcc96476c9a#subdirectory=nomad-thermomech",
-  "nomad-walterbai @ git+https://github.com/ludekheller/nomad_plugins.git@6b8f274ba5717346fc389bfbda633d28129b1b66#subdirectory=nomad-walterbai",
+  "nomad-walterbai @ git+https://github.com/ludekheller/nomad_plugins.git@54198b1ea5a2694b4f828b7942032fb327e2f4b9#subdirectory=nomad-walterbai",
+  "nomad-linseis @ git+https://github.com/ludekheller/nomad_plugins.git@54198b1ea5a2694b4f828b7942032fb327e2f4b9#subdirectory=nomad-linseis",
 ]
 jupyter = ["jupyter-events"]
 gpu-action = []

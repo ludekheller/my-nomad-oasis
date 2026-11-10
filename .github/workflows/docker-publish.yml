@@ -24,7 +24,7 @@ env:
   # If you want to skip the tests for some plugins, add them here as a single string where
   # each plugin is separated by a comma or a line break
   #PLUGIN_TESTS_PLUGINS_TO_SKIP: ""
-  PLUGIN_TESTS_PLUGINS_TO_SKIP: "nomad-dsc-trios,nomad-thermomech,nomad-walterbai"
+  PLUGIN_TESTS_PLUGINS_TO_SKIP: "nomad-dsc-trios,nomad-thermomech,nomad-walterbai,nomad-linseis"
 
 permissions:
   contents: write
