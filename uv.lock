@@ -3855,7 +3855,7 @@ requires-dist = [
     { name = "nomad-apt", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-apt&rev=482fcda3e2c0deed5d50ce1dd634f6ca783b571b" },
     { name = "nomad-dept18-apps", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dept18-apps&rev=ede72f207f013ad4f20cdd9fe6cdb4fd87c70504" },
     { name = "nomad-dept18-jupyter", marker = "extra == 'jupyter'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dept18-jupyter&rev=8b9a53c1d50ba905675bc9bee6b49e531f6b2a2e" },
-    { name = "nomad-dsc-trios", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=ffda2c381bb6d293e99314c134a40616152fd34d" },
+    { name = "nomad-dsc-trios", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=9b9534917b646157f3d43ee7771cbe78dfe25474" },
     { name = "nomad-gui", marker = "extra == 'plugins'", specifier = "==2.0.0" },
     { name = "nomad-infratec", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-infratec&rev=6ce89f65663311d8c5fa26f2744e85cbee0a42cb" },
     { name = "nomad-lab", extras = ["dev", "infrastructure"], marker = "extra == 'dev'", specifier = "==2.0.0" },
@@ -3869,8 +3869,8 @@ provides-extras = ["plugins", "jupyter", "gpu-action", "cpu-action", "dev"]
 
 [[package]]
 name = "nomad-dsc-trios"
-version = "0.6.4"
-source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=ffda2c381bb6d293e99314c134a40616152fd34d#ffda2c381bb6d293e99314c134a40616152fd34d" }
+version = "0.6.5"
+source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=9b9534917b646157f3d43ee7771cbe78dfe25474#9b9534917b646157f3d43ee7771cbe78dfe25474" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "scipy", version = "1.17.1", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version < '3.12'" },
