@@ -183,11 +183,11 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 USER root
 
-# Ubuntu packages from the Azure mirror that GitHub's own runners use (archive.ubuntu.com could not be
+# Ubuntu packages from the kernel.org mirror (on 2026-11-11 no *.ubuntu.com host could be
 # resolved from the build), with retries
 RUN for f in /etc/apt/sources.list /etc/apt/sources.list.d/*.sources; do \
-      [ -f "$f" ] && sed -i -e 's|http://archive.ubuntu.com|http://azure.archive.ubuntu.com|g' \
-                           -e 's|http://security.ubuntu.com|http://azure.archive.ubuntu.com|g' "$f"; \
+      [ -f "$f" ] && sed -i -e 's|http://archive.ubuntu.com|http://mirrors.edge.kernel.org|g' \
+                           -e 's|http://security.ubuntu.com|http://mirrors.edge.kernel.org|g' "$f"; \
     done; \
     echo 'Acquire::Retries "5";' > /etc/apt/apt.conf.d/80-retries
 
@@ -226,11 +226,11 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 USER root
 
-# Ubuntu packages from the Azure mirror that GitHub's own runners use (archive.ubuntu.com could not be
+# Ubuntu packages from the kernel.org mirror (on 2026-11-11 no *.ubuntu.com host could be
 # resolved from the build), with retries
 RUN for f in /etc/apt/sources.list /etc/apt/sources.list.d/*.sources; do \
-      [ -f "$f" ] && sed -i -e 's|http://archive.ubuntu.com|http://azure.archive.ubuntu.com|g' \
-                           -e 's|http://security.ubuntu.com|http://azure.archive.ubuntu.com|g' "$f"; \
+      [ -f "$f" ] && sed -i -e 's|http://archive.ubuntu.com|http://mirrors.edge.kernel.org|g' \
+                           -e 's|http://security.ubuntu.com|http://mirrors.edge.kernel.org|g' "$f"; \
     done; \
     echo 'Acquire::Retries "5";' > /etc/apt/apt.conf.d/80-retries
 
