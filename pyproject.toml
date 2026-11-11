@@ -36,7 +36,7 @@ plugins = [
   "nomad-thermomech @ git+https://github.com/ludekheller/nomad_plugins.git@0ea4b2b06975f04792f16fdf4e425dcc96476c9a#subdirectory=nomad-thermomech",
   "nomad-walterbai @ git+https://github.com/ludekheller/nomad_plugins.git@54198b1ea5a2694b4f828b7942032fb327e2f4b9#subdirectory=nomad-walterbai",
   "nomad-apt @ git+https://github.com/ludekheller/nomad_plugins.git@482fcda3e2c0deed5d50ce1dd634f6ca783b571b#subdirectory=nomad-apt",
-  "nomad-dept18-apps @ git+https://github.com/ludekheller/nomad_plugins.git@59b7657cab6eb7feccf3ffcf6aae6c2e70b97a06#subdirectory=nomad-dept18-apps",
+  "nomad-dept18-apps @ git+https://github.com/ludekheller/nomad_plugins.git@308471b5af576fe020dbab6d6ba0a40aad2aca1c#subdirectory=nomad-dept18-apps",
   "nomad-infratec @ git+https://github.com/ludekheller/nomad_plugins.git@8a7490d38dcd1094e01671cf93225021e7b64a17#subdirectory=nomad-infratec",
   "nomad-linseis @ git+https://github.com/ludekheller/nomad_plugins.git@54198b1ea5a2694b4f828b7942032fb327e2f4b9#subdirectory=nomad-linseis",
 ]
