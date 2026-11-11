@@ -3677,8 +3677,8 @@ dependencies = [
 
 [[package]]
 name = "nomad-dept18-apps"
-version = "0.1.2"
-source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dept18-apps&rev=308471b5af576fe020dbab6d6ba0a40aad2aca1c#308471b5af576fe020dbab6d6ba0a40aad2aca1c" }
+version = "0.2.0"
+source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dept18-apps&rev=6ce89f65663311d8c5fa26f2744e85cbee0a42cb#6ce89f65663311d8c5fa26f2744e85cbee0a42cb" }
 dependencies = [
     { name = "nomad-lab" },
 ]
@@ -3713,23 +3713,23 @@ plugins = [
 requires-dist = [
     { name = "jupyter-events", marker = "extra == 'jupyter'" },
     { name = "nomad-apt", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-apt&rev=482fcda3e2c0deed5d50ce1dd634f6ca783b571b" },
-    { name = "nomad-dept18-apps", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dept18-apps&rev=308471b5af576fe020dbab6d6ba0a40aad2aca1c" },
-    { name = "nomad-dsc-trios", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=8f43b1bd34f33e379a17ce91c31de4da793acecd" },
+    { name = "nomad-dept18-apps", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dept18-apps&rev=6ce89f65663311d8c5fa26f2744e85cbee0a42cb" },
+    { name = "nomad-dsc-trios", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=6ce89f65663311d8c5fa26f2744e85cbee0a42cb" },
     { name = "nomad-gui", marker = "extra == 'plugins'", specifier = "==2.0.0" },
-    { name = "nomad-infratec", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-infratec&rev=8a7490d38dcd1094e01671cf93225021e7b64a17" },
+    { name = "nomad-infratec", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-infratec&rev=6ce89f65663311d8c5fa26f2744e85cbee0a42cb" },
     { name = "nomad-lab", extras = ["dev", "infrastructure"], marker = "extra == 'dev'", specifier = "==2.0.0" },
     { name = "nomad-lab", extras = ["infrastructure"], specifier = "==2.0.0" },
     { name = "nomad-linseis", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-linseis&rev=54198b1ea5a2694b4f828b7942032fb327e2f4b9" },
     { name = "nomad-north-jupyter", marker = "extra == 'plugins'", specifier = ">=0.2.6" },
-    { name = "nomad-thermomech", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-thermomech&rev=0ea4b2b06975f04792f16fdf4e425dcc96476c9a" },
-    { name = "nomad-walterbai", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-walterbai&rev=54198b1ea5a2694b4f828b7942032fb327e2f4b9" },
+    { name = "nomad-thermomech", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-thermomech&rev=6ce89f65663311d8c5fa26f2744e85cbee0a42cb" },
+    { name = "nomad-walterbai", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-walterbai&rev=6ce89f65663311d8c5fa26f2744e85cbee0a42cb" },
 ]
 provides-extras = ["plugins", "jupyter", "gpu-action", "cpu-action", "dev"]
 
 [[package]]
 name = "nomad-dsc-trios"
-version = "0.4.2"
-source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=8f43b1bd34f33e379a17ce91c31de4da793acecd#8f43b1bd34f33e379a17ce91c31de4da793acecd" }
+version = "0.4.3"
+source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=6ce89f65663311d8c5fa26f2744e85cbee0a42cb#6ce89f65663311d8c5fa26f2744e85cbee0a42cb" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "tzdata" },
@@ -3755,8 +3755,8 @@ wheels = [
 
 [[package]]
 name = "nomad-infratec"
-version = "0.1.0"
-source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-infratec&rev=8a7490d38dcd1094e01671cf93225021e7b64a17#8a7490d38dcd1094e01671cf93225021e7b64a17" }
+version = "0.1.1"
+source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-infratec&rev=6ce89f65663311d8c5fa26f2744e85cbee0a42cb#6ce89f65663311d8c5fa26f2744e85cbee0a42cb" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "nptdms" },
@@ -3896,8 +3896,8 @@ wheels = [
 
 [[package]]
 name = "nomad-thermomech"
-version = "0.4.1"
-source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-thermomech&rev=0ea4b2b06975f04792f16fdf4e425dcc96476c9a#0ea4b2b06975f04792f16fdf4e425dcc96476c9a" }
+version = "0.4.2"
+source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-thermomech&rev=6ce89f65663311d8c5fa26f2744e85cbee0a42cb#6ce89f65663311d8c5fa26f2744e85cbee0a42cb" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "numpy", version = "2.4.6", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version < '3.12'" },
@@ -3907,8 +3907,8 @@ dependencies = [
 
 [[package]]
 name = "nomad-walterbai"
-version = "0.2.0"
-source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-walterbai&rev=54198b1ea5a2694b4f828b7942032fb327e2f4b9#54198b1ea5a2694b4f828b7942032fb327e2f4b9" }
+version = "0.2.1"
+source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-walterbai&rev=6ce89f65663311d8c5fa26f2744e85cbee0a42cb#6ce89f65663311d8c5fa26f2744e85cbee0a42cb" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "numpy", version = "2.4.6", source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }, marker = "python_full_version < '3.12'" },
