@@ -3677,8 +3677,8 @@ dependencies = [
 
 [[package]]
 name = "nomad-dept18-apps"
-version = "0.1.0"
-source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dept18-apps&rev=8a7490d38dcd1094e01671cf93225021e7b64a17#8a7490d38dcd1094e01671cf93225021e7b64a17" }
+version = "0.1.1"
+source = { git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dept18-apps&rev=59b7657cab6eb7feccf3ffcf6aae6c2e70b97a06#59b7657cab6eb7feccf3ffcf6aae6c2e70b97a06" }
 dependencies = [
     { name = "nomad-lab" },
 ]
@@ -3713,7 +3713,7 @@ plugins = [
 requires-dist = [
     { name = "jupyter-events", marker = "extra == 'jupyter'" },
     { name = "nomad-apt", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-apt&rev=482fcda3e2c0deed5d50ce1dd634f6ca783b571b" },
-    { name = "nomad-dept18-apps", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dept18-apps&rev=8a7490d38dcd1094e01671cf93225021e7b64a17" },
+    { name = "nomad-dept18-apps", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dept18-apps&rev=59b7657cab6eb7feccf3ffcf6aae6c2e70b97a06" },
     { name = "nomad-dsc-trios", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-dsc-trios&rev=8f43b1bd34f33e379a17ce91c31de4da793acecd" },
     { name = "nomad-gui", marker = "extra == 'plugins'", specifier = "==2.0.0" },
     { name = "nomad-infratec", marker = "extra == 'plugins'", git = "https://github.com/ludekheller/nomad_plugins.git?subdirectory=nomad-infratec&rev=8a7490d38dcd1094e01671cf93225021e7b64a17" },
