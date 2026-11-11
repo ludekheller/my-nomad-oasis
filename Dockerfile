@@ -183,6 +183,14 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 USER root
 
+# Ubuntu packages from the Azure mirror that GitHub's own runners use (archive.ubuntu.com could not be
+# resolved from the build), with retries
+RUN for f in /etc/apt/sources.list /etc/apt/sources.list.d/*.sources; do \
+      [ -f "$f" ] && sed -i -e 's|http://archive.ubuntu.com|http://azure.archive.ubuntu.com|g' \
+                           -e 's|http://security.ubuntu.com|http://azure.archive.ubuntu.com|g' "$f"; \
+    done; \
+    echo 'Acquire::Retries "5";' > /etc/apt/apt.conf.d/80-retries
+
 RUN apt-get update \
  && apt-get install --yes --quiet --no-install-recommends \
       libgomp1 \
@@ -217,6 +225,14 @@ FROM quay.io/jupyter/base-notebook:${JUPYTER_VERSION} AS jupyter
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 USER root
+
+# Ubuntu packages from the Azure mirror that GitHub's own runners use (archive.ubuntu.com could not be
+# resolved from the build), with retries
+RUN for f in /etc/apt/sources.list /etc/apt/sources.list.d/*.sources; do \
+      [ -f "$f" ] && sed -i -e 's|http://archive.ubuntu.com|http://azure.archive.ubuntu.com|g' \
+                           -e 's|http://security.ubuntu.com|http://azure.archive.ubuntu.com|g' "$f"; \
+    done; \
+    echo 'Acquire::Retries "5";' > /etc/apt/apt.conf.d/80-retries
 
 RUN apt-get update \
  && apt-get install --yes --quiet --no-install-recommends \
