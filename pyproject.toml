@@ -32,7 +32,7 @@ repository = "https://github.com/ludekheller/my-nomad-oasis"
 plugins = [
   "nomad-north-jupyter>=0.2.6",
   "nomad-gui==2.0.0",
-  "nomad-dsc-trios @ git+https://github.com/ludekheller/nomad_plugins.git@8b9a53c1d50ba905675bc9bee6b49e531f6b2a2e#subdirectory=nomad-dsc-trios",
+  "nomad-dsc-trios @ git+https://github.com/ludekheller/nomad_plugins.git@d71ffabfd874d142abb2a517868923b87b46e29b#subdirectory=nomad-dsc-trios",
   "nomad-thermomech @ git+https://github.com/ludekheller/nomad_plugins.git@6ce89f65663311d8c5fa26f2744e85cbee0a42cb#subdirectory=nomad-thermomech",
   "nomad-walterbai @ git+https://github.com/ludekheller/nomad_plugins.git@6ce89f65663311d8c5fa26f2744e85cbee0a42cb#subdirectory=nomad-walterbai",
   "nomad-apt @ git+https://github.com/ludekheller/nomad_plugins.git@482fcda3e2c0deed5d50ce1dd634f6ca783b571b#subdirectory=nomad-apt",
